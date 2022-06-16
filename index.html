@@ -11,8 +11,9 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/style.css" />
 
     <title>Weather App</title>
   </head>
@@ -21,10 +22,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>New York</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Friday 05:00</li>
-              <li>Fog</li>
+              <li id="description"></li>
             </ul>
             <div class="row">
               <div class="col-6">
@@ -34,7 +35,7 @@
                     alt="Skies and rain"
                     class="float-left"
                   />
-                  <strong>12</strong
+                  <strong id="temperature">12</strong
                   ><span class="units">°C | <a href="">°F</a></span>
                 </div>
               </div>
